@@ -1,0 +1,211 @@
+/*  Variables */
+
+:root{
+
+    /* Colors */
+    --color-primary: #071629;
+    --color-secondary: #FF6565;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-dark-grey: #979797;
+    --color-light-grey: #D8D8D8;
+
+    --text-color: var(--color-black)
+
+    /* Font Size, weight and Color */
+    
+    --font-family-base: 'Source Sans pro','Spin Cycle OT'
+
+    --font-size-very-large: 2.88rem;
+    --font-size-large: 2rem;
+    --font-size-medium: 1.1rem;
+    --font-size-small: 1rem;
+    --font-size-very-small: 0.9rem;
+    --font-size-very-very-small: 0.8rem;
+
+    --font-weight-very-bold: 700;
+    --font-weight-bold: 600;
+    --font-weight-regular: 400;
+
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+
+    /*  Section */
+
+    --section-padding: 6.88rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-header-align: center;
+    --section-title-font-size: var(--font-size-very-large);
+    --section-title-font-weight: var(--font-weight-bold);
+    --section-title-line-height: var(--line-height-small);
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-tagline-transform: uppercase;
+    --section-tagline-color: var(--color-primary);
+    --section-tagline-font-family: var(--font-family-headings);
+    --section-tagline-font-weight: var(--font-weight-bold);
+    --section-tagline-margin: 0;
+    --section-body-padding: 2rem 0 4rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+
+    /** HEADER **/
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
+  
+    /** FOOTER **/
+    --footer-padding: 5rem 0 1rem;
+  
+    /** NAVBAR **/
+    --nav-item-font-family: var(--font-family-headings);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: .04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 2rem 0 0;
+    --nav-item-link-hover: var(--color-white);
+  
+    /** BUTTON **/
+    --button-padding: .5rem 1rem;
+    --button-border: var(--color-secondary) solid 0.2rem;
+    --button-border-radius:22px;
+    --button-color: var(--color-black);
+    --button-text-decoration: none;
+    --button-font-size: var(--font-size--very-small);
+    --button-hover-color: var(--color-white);
+    --button-hover-text-decoration: none;
+    --button-hover-background: var(--color-primary);
+  
+    /** MOTION **/
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+  }
+  
+  /* Base
+      ============================= */
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+  scroll-behavior: smooth;
+  }
+  
+  body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    margin: 0 auto;
+    box-sizing: border-box;
+
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    font-style: italic;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    background-color: var(--color-light-grey);
+  }
+  
+  .button {
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font-size: var(--button-font-size);
+    background: var(--color-secondary);
+    color: var(--color-white);
+    text-decoration: var(--button-text-decoration);
+    border-radius: var(--button-border-radius);
+}
+  
+  .button:hover {
+    color: var(--button-hover-color);
+    text-decoration: var(--button-hover-text-decoration);
+    /* background: var(--button-hover-background); */
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
+}
+
+
+/* ================== Header ==================== */
+
+.navigation{
+  width:100%;
+  height:100vh;
+  background-image: url('./images/headphones_hero_1.jpg');
+  background-size:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  flex: 1 2 auto;
+}
+.navigation_header_1{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding: var(--header-padding)
+ }
+
+ .right .text{
+  font-size: var(--font-size-very-very-small);
+  font-family: var(--font-family-base);
+ }
+.navigation_header_1 .left img{
+  height: 2rem;
+  width: 161px;
+}
+
+.navigation_content{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navigation_content .content_1{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.navigation_content .content_1 .larger_font{
+  font-size: var(--font-size-large);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-very-bold);
+  color: var(--color-white);
+}
+.navigation_content .content_1 .smaller_font{
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-very-bold);
+  color: var(--color-white);
+}
+
+.navigation_content .content_2{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
